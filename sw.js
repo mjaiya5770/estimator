@@ -1,6 +1,6 @@
 /* Estimator service worker — app-shell cache, network-first for pages.
    Calculators keep working offline once visited; ads and APIs are never intercepted. */
-const CACHE = 'estimator-v4';
+const CACHE = 'estimator-v5';
 const SHELL = [
   '/',
   '/index.html',
