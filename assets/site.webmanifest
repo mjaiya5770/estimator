@@ -1,7 +1,7 @@
 {
-  "name": "Estimator \u2014 Free Online Calculators",
+  "name": "Estimator — Free Online Calculators",
   "short_name": "Estimator",
-  "description": "Estimator is the project-numbers library: 60+ construction and cost estimators for materials, quantities and budgets \u2014 concrete, roofing, flooring, remodels \u2014 plus the full 154-calculator library. Free, no signup.",
+  "description": "Estimator is the project-numbers library: 60+ construction and cost estimators for materials, quantities and budgets — concrete, roofing, flooring, remodels — plus the full 154-calculator library. Free, no signup.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -17,6 +17,12 @@
       "src": "/assets/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
