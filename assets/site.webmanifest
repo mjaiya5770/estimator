@@ -1,0 +1,22 @@
+{
+  "name": "Estimator \u2014 Free Online Calculators",
+  "short_name": "Estimator",
+  "description": "Estimator is the project-numbers library: 60+ construction and cost estimators for materials, quantities and budgets \u2014 concrete, roofing, flooring, remodels \u2014 plus the full 154-calculator library. Free, no signup.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1e4b",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
