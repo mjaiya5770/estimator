@@ -1,15 +1,15 @@
 # Estimator
 
-Estimator is a free online estimation library — construction material estimators (concrete, roofing, flooring, tile), project cost estimators (remodels, decks, driveways, HVAC) and the full set of 154 money, health and everyday calculators. Estimator calculates quantities, coverage and costs; results are planning estimates, not quotes.
+Estimator is a free online estimation library — construction material estimators (concrete, roofing, flooring, tile), project cost estimators (remodels, decks, driveways, HVAC) and the full set of 176 money, health and everyday calculators. Estimator calculates quantities, coverage and costs; results are planning estimates, not quotes.
 
 Made for contractors, DIYers, homeowners and the trades — plus anyone who reaches for the money and everyday tools.
 
-All 154 calculators are free, with no account or sign-up. Every calculator shows its formula or method and at least one worked example.
+All 176 calculators are free, with no account or sign-up. Every calculator shows its formula or method and at least one worked example.
 
 ## Key pages
 
-- [Home](https://estimator.website/): all 154 calculators, organized by category.
-- [Embed these calculators](https://estimator.website/embed.html): put any of the 154 Estimator calculators on your own site for free — no account, no attribution required.
+- [Home](https://estimator.website/): all 176 calculators, organized by category.
+- [Embed these calculators](https://estimator.website/embed.html): put any of the 176 Estimator calculators on your own site for free — no account, no attribution required.
 - [Partnerships](https://estimator.website/partnerships.html): the network Estimator belongs to, and how to partner with us.
 - [Creator ROI Hub — Earnings, Sponsorship & Fee Calculators](https://estimator.website/creator-roi-calculators.html): The Creator ROI Hub: free calculators for people who publish for a living — YouTube and TikTok earnings, sponsorship rates, payment fees and AI API costs, with honest ranges and the math shown.
 - [How to Get Out of Debt: The Avalanche vs Snowball Playbook](https://estimator.website/guides/get-out-of-debt-avalanche-vs-snowball.html)
@@ -32,7 +32,7 @@ All 154 calculators are free, with no account or sign-up. Every calculator shows
 - [Kitchen Remodel Estimator — Cost Ranges & Budget Shares](https://estimator.website/tools/kitchen-remodel-estimator.html)
 - [Square Footage Calculator — 4 Shapes, Rooms List & Cost](https://estimator.website/tools/square-footage-calculator.html)
 
-## All calculators (69 owned of 154/158 — one-owner rule)
+## All calculators (76 owned of 176/180 — one-owner rule)
 
 ### Estimators — materials &amp; quantities
 - [Concrete Calculator — Yards, Bag Counts & Cost by Shape](https://estimator.website/tools/concrete-calculator.html)
@@ -78,6 +78,10 @@ All 154 calculators are free, with no account or sign-up. Every calculator shows
 - [French Drain Estimator — Gravel, Pipe & Fabric by Trench Size](https://estimator.website/tools/french-drain-estimator.html)
 - [Tank Volume Estimator — Gallons, Litres & Water Weight by Shape](https://estimator.website/tools/tank-volume-estimator.html)
 - [BTU Estimator — Heating & Cooling Load by Size, Climate, Insulation](https://estimator.website/tools/btu-estimator.html)
+- [Rafter Length Calculator — Common & Hip Rafters, Birdsmouth, Overhang](https://estimator.website/tools/rafter-length-calculator.html)
+- [Material Weight Calculator — Steel, Aluminum, Concrete, Lumber, Gravel & More](https://estimator.website/tools/material-weight-calculator.html)
+- [Trim & Molding Estimator — Baseboard, Crown & Casing by Room](https://estimator.website/tools/trim-molding-estimator.html)
+- [Wainscoting Calculator — Panels, Stiles, Rails & Sheet Count](https://estimator.website/tools/wainscoting-calculator.html)
 
 ### Cost estimators — what projects run
 - [Roof Replacement Cost Estimator — Price Ranges by Material](https://estimator.website/tools/roof-replacement-cost-estimator.html)
@@ -102,6 +106,9 @@ All 154 calculators are free, with no account or sign-up. Every calculator shows
 - [Solar Cost Estimator — System Size, Cost & Payback from Your Usage](https://estimator.website/tools/solar-cost-estimator.html)
 - [EV Charging Cost Estimator — Home Charging Cost vs Gas](https://estimator.website/tools/ev-charging-cost-estimator.html)
 - [Moving Cost Estimator — Movers vs DIY Price Estimate](https://estimator.website/tools/moving-cost-estimator.html)
+- [Drywall Cost Estimator — Installed Cost by Finish Level, Sheets & Labor](https://estimator.website/tools/drywall-cost-estimator.html)
+- [Tree Removal Cost Estimator — By Height, Access & Stump Grinding](https://estimator.website/tools/tree-removal-cost-estimator.html)
+- [Cabinet Door Calculator — Replacement Door & Drawer Front Pricing](https://estimator.website/tools/cabinet-door-calculator.html)
 
 ### Money, loans &amp; property
 
