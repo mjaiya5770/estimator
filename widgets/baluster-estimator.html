@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Baluster Estimator — Spindle Count by Railing Length & Code Spacing | Estimator</title>
+<meta name="description" content="Free baluster estimator: how many balusters or spindles a railing run needs at code spacing (the 4-inch sphere rule), with the actual gap your even layout lands on.">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../assets/site.webmanifest">
+<meta name="theme-color" content="#2563eb">
+<meta property="og:image" content="https://estimator.website/assets/icon-512.png">
+<meta property="og:site_name" content="Estimator">
+<link rel="canonical" href="https://estimator.website/tools/baluster-estimator.html">
+<meta property="og:title" content="Free Baluster Estimator — Spindle Count by Railing Length & Code Spacing | Estimator">
+<meta property="og:description" content="Free baluster estimator: how many balusters or spindles a railing run needs at code spacing (the 4-inch sphere rule), with the actual gap your even layout lands on.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://estimator.website/tools/baluster-estimator.html">
+<meta property="og:image" content="https://estimator.website/assets/icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free Baluster Estimator — Spindle Count by Railing Length & Code Spacing | Estimator">
+<meta name="twitter:description" content="Free baluster estimator: how many balusters or spindles a railing run needs at code spacing (the 4-inch sphere rule), with the actual gap your even layout lands on.">
+<meta name="twitter:image" content="https://estimator.website/assets/icon-512.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Baluster Estimator",
+  "description": "Free baluster estimator: how many balusters or spindles a railing run needs at code spacing (the 4-inch sphere rule), with the actual gap your even layout lands on.",
+  "url": "https://estimator.website/tools/baluster-estimator.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Estimator",
+    "url": "https://estimator.website/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many balusters do I need for a 12-ft railing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Twenty-seven, at 1.5-in balusters and the 4-in maximum gap. The even layout lands on a 3.83-in actual gap \u2014 safely legal, and the number to cut your spacer block to."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many for an 8-ft deck rail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eighteen at the same settings. Shorter runs do not scale perfectly linearly \u2014 the ceiling function means small rails carry proportionally a little more margin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why 4 inches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the child-safety rule written into US building codes: a 4-in sphere approximates a small child's head and torso clearance. Decks, stairs and lofts all use it; some commercial codes tighten to other gauges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Metal or wood balusters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Count is identical \u2014 the math cares about width and gap, not material. Metal balusters at \u00bd\u2013\u00be in wide actually need MORE pieces than chunky 1.5-in wood at the same legal gap, which surprises people pricing \"cheaper\" thin balusters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I lay them out evenly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide the run by the count from this estimator to get your true pitch, cut a spacer block to pitch-minus-baluster (the actual gap), and work from both ends toward the middle. Never lay out by the maximum gap from one end \u2014 the last space inherits every error."
+      }
+    }
+  ]
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8058544460943611" crossorigin="anonymous"></script>
+
+<!-- NN-EMBED --><script>if(/[?&]embed=1(&|$)/.test(window.location.search))document.documentElement.classList.add("nn-embed");</script>
+<meta name="robots" content="noindex">
+<script>if(!/[?&]embed=1(&|$)/.test(window.location.search))window.location.replace("../tools/baluster-estimator.html");</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img class="brand-icon" src="../assets/icon-192.png" alt="Estimator logo" width="28" height="28">Estimator</a>
+    <nav><a href="../calculators.html">Calculators</a><a href="../tools/concrete-calculator.html">Concrete</a><a href="../tools/roofing-estimator.html">Roofing</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="nn-embed-bar">Calculator via <a href="https://estimator.website/tools/baluster-estimator.html" target="_top" rel="noopener">Estimator</a></div>
+  <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../calculators.html#cat-home-diy-tools">Home & DIY tools</a> › Baluster Estimator</div>
+<div class="nn-ad nn-ad-top" data-k728="21567fdb3b657a147120000a47c222d8" data-k320="276d5857ab424fb5b4d04320a8aa16fd"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Estimator — every project number, free</strong><span>Materials, quantities &amp; costs for home, garden &amp; builds. No signup, ever →</span></a></div>
+  <h1 class="tool-title">Baluster Estimator</h1>
+  <p class="lede">Railings fail inspection on one number: a 4-inch sphere must not pass between balusters. Enter the run and the baluster width — get the count that keeps every gap legal, and the actual gap your even spacing works out to.</p>
+
+  <div class="card nn-calc-card">
+
+    <div class="row">
+      <div class="field"><label for="run">Railing run length (ft)</label><input id="run" type="number" value="12" min="0" step="any"></div>
+      <div class="field"><label for="balw">Baluster width (in)</label><input id="balw" type="number" value="1.5" min="0" step="any"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="gap">Maximum gap allowed (in)</label><input id="gap" type="number" value="4" min="0" step="any"></div>
+    </div>
+    <p style="color:var(--muted);font-size:.92rem;margin:4px 0 0">The 4-in rule is the US residential standard for guards. Stair rails measure the run along the slope and use a slightly larger sphere at the tread triangle (4⅜ in in many codes) — check your local amendment before ordering stair balusters.</p>
+
+    <button class="btn" onclick="calc()">Count balusters</button>
+    <div class="nn-actions no-print" data-nn-actions>
+  <button type="button" class="nn-btn" data-nn="share">🔗 Copy link to this result</button>
+  <button type="button" class="nn-btn" data-nn="copy">📋 Copy result</button>
+  <button type="button" class="nn-btn" data-nn="save">💾 Save this calculation</button>
+  <button type="button" class="nn-btn" data-nn="print">🖨️ Print / Save PDF</button>
+</div>
+<div class="nn-saves no-print" id="nnSavesPanel" hidden></div>
+<p class="nn-embed-link no-print"><a href="../embed.html#baluster-estimator">Embed this calculator on your site — free</a></p>
+<div class="results" id="results">
+      <div style="color:var(--muted);font-size:.9rem">Balusters to buy</div>
+      <div id="verdict" style="font-weight:700;font-size:1.02rem;margin:2px 0 6px"></div>
+      <div class="big" id="rMain">—</div>
+      <table><tbody id="rows"></tbody></table>
+    <div class="nn-signature" data-nn-signature><p class="nn-sig-title">Signature view</p><div class="nn-sig-body"></div></div></div>
+  </div>
+<div class="nn-ad" data-key="a3b1d00ad85cd3b93fc5c514e9b784ca" data-w="300" data-h="250"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Estimator — every project number, free</strong><span>Materials, quantities &amp; costs for home, garden &amp; builds. No signup, ever →</span></a></div>
+
+  <div class="card">
+    <h2>How it works</h2>
+    <p style="color:var(--muted)">Each baluster occupies its width plus one gap. At the maximum legal gap of 4 in with a 1.5-in baluster, the repeating pitch is 5.5 in — so a 12-ft rail (144 in) needs ⌈144 ÷ 5.5⌉ = <strong>27 balusters</strong>. The subtlety: with an even count, the real gap shrinks a little — 144 ÷ 27 = 5.33 in pitch, a 3.83-in actual gap — which the results show so you can lay out with a spacer block cut to the true dimension instead of accumulating error baluster by baluster.</p>
+    <div class="note">Estimates only. Guard rules vary: height minimums, load requirements and the stair-triangle exception differ by jurisdiction and by residential vs commercial use. This counts balusters for a straight run between two posts; corners, gates and stair transitions each need their own run.</div>
+  </div>
+
+
+  <div class="card">
+    <h2>Formula &amp; worked example</h2>
+    <p><strong>Formula:</strong> Count = ceil(run in inches ÷ (baluster width + maximum gap)). With the 4-in sphere rule and a 1.5-in baluster the pitch is 5.5 in. Actual gap = run ÷ count − baluster width, which is the spacer-block dimension for an even layout.</p>
+    <p><strong>Worked example:</strong> A 12-ft rail: 144 ÷ 5.5 rounds up to 27 balusters, landing on a true gap of 3.83 in. An 8-ft rail takes 18.</p>
+  </div>
+
+
+  <div class="card">
+    <h2>When to use this</h2>
+    <ul><li>You are building a deck or porch railing and ordering balusters.</li><li>You are checking a railing kit's piece count against the code gap.</li><li>You need the true spacer-block size for an even layout.</li></ul>
+  </div>
+
+  <div class="card">
+    <h2>How to use it, step by step</h2>
+    <ol><li>Measure the straight run between posts in feet.</li><li>Enter your baluster's actual width.</li><li>Leave the max gap at 4 in unless your code says otherwise.</li><li>Cut the spacer block to the actual-gap figure shown, not the maximum.</li></ol>
+    <h3>What the inputs mean</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:.95rem"><thead><tr style="text-align:left;border-bottom:2px solid var(--border-strong)"><th style="padding:8px">Input</th><th style="padding:8px">What it is</th><th style="padding:8px">Typical values</th></tr></thead><tbody><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px"><strong>Run length</strong></td><td style="padding:6px 8px">Post-to-post railing length</td><td style="padding:6px 8px">4–16 ft typical rail sections</td></tr><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px"><strong>Baluster width</strong></td><td style="padding:6px 8px">Face width of one baluster</td><td style="padding:6px 8px">½–¾ in metal; 1.5 in wood standard</td></tr><tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px"><strong>Maximum gap</strong></td><td style="padding:6px 8px">Largest legal space between balusters</td><td style="padding:6px 8px">4 in US residential standard</td></tr></tbody></table>
+  </div>
+
+  <div class="card">
+    <h2>Another worked example</h2>
+    <p>An 8-ft porch rail at the same settings: 96 in ÷ 5.5 in pitch rounds up to 18 balusters, and the even layout again lands on a 3.83-in actual gap. Short rails carry proportionally more margin — the ceiling function is doing you a favour at inspection time.</p>
+  </div>
+
+  <div class="card faq">
+    <h2>Frequently asked questions</h2>
+    <h3>How many balusters do I need for a 12-ft railing?</h3>
+    <p>Twenty-seven, at 1.5-in balusters and the 4-in maximum gap. The even layout lands on a 3.83-in actual gap — safely legal, and the number to cut your spacer block to.</p>
+    <h3>How many for an 8-ft deck rail?</h3>
+    <p>Eighteen at the same settings. Shorter runs do not scale perfectly linearly — the ceiling function means small rails carry proportionally a little more margin.</p>
+    <h3>Why 4 inches?</h3>
+    <p>It is the child-safety rule written into US building codes: a 4-in sphere approximates a small child's head and torso clearance. Decks, stairs and lofts all use it; some commercial codes tighten to other gauges.</p>
+    <h3>Metal or wood balusters?</h3>
+    <p>Count is identical — the math cares about width and gap, not material. Metal balusters at ½–¾ in wide actually need MORE pieces than chunky 1.5-in wood at the same legal gap, which surprises people pricing "cheaper" thin balusters.</p>
+    <h3>How do I lay them out evenly?</h3>
+    <p>Divide the run by the count from this estimator to get your true pitch, cut a spacer block to pitch-minus-baluster (the actual gap), and work from both ends toward the middle. Never lay out by the maximum gap from one end — the last space inherits every error.</p>
+    
+  </div>
+  <div class="cta-box">
+    <h3>🪜 Balusters for a staircase?</h3>
+    <p>For the stair itself — risers, treads, run and stringer length — the Stair Estimator works out the geometry the railing has to follow.</p>
+    <p><a class="btn" href="stair-estimator.html">Work out the stairs</a></p>
+    <h3>Do stairs use the same 4-inch rule?</h3>
+    <p>Along the rake, yes for the baluster field; the triangular gap at the bottom rail and tread nosing gets a slightly larger sphere allowance (4⅜ in) in many codes. Verify locally before ordering stair balusters.</p>
+    <h3>How are balusters sold?</h3>
+    <p>Singles at home centres, and in contractor packs of 10–50 for metal balusters with shoes and screws included. Order one pack over the count — colour lots vary and a bent baluster should never be straightened into a guard.</p>
+  </div>
+</main>
+
+<div class="nn-ad nn-ad-bottom" data-key="a3b1d00ad85cd3b93fc5c514e9b784ca" data-w="300" data-h="250"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Estimator — every project number, free</strong><span>Materials, quantities &amp; costs for home, garden &amp; builds. No signup, ever →</span></a></div>
+<section class="related-tools">
+  <h2>Related tools</h2>
+  <ul>
+    <li><a href="stair-estimator.html">Stair Estimator</a></li>
+    <li><a href="deck-material-estimator.html">Deck Material Estimator</a></li>
+    <li><a href="deck-stain-estimator.html">Deck Stain Estimator</a></li>
+    <li><a href="framing-estimator.html">Framing Estimator</a></li>
+    
+  </ul>
+</section>
+<footer class="site-footer"><div class="wrap"><div>© 2026 Estimator</div><div><a href="../terms.html">Terms</a> · <a href="../privacy.html">Privacy</a> · <a href="../index.html">All tools</a> · <a href="../calculators.html">Calculators</a> · <a href="../embed.html">Embed</a> · <a href="../partnerships.html">Partnerships</a> · <a href="../creator-roi-calculators.html">Creator ROI</a></div></div></footer>
+<script>
+
+function v(id){return +document.getElementById(id).value||0;}
+function sv(id){return document.getElementById(id).value;}
+function fmt(n){return n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function fmt0(n){return n.toLocaleString('en-US',{maximumFractionDigits:0});}
+function fmt1(n){return n.toLocaleString('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});}
+function row(l,val){return '<tr><td>'+l+'</td><td>'+val+'</td></tr>';}
+function money(n){return '$'+fmt(n);}
+function money0(n){return '$'+fmt0(Math.round(n));}
+function ceilg(x){return Math.ceil(x-1e-9);}
+
+/*PURE-BEGIN*/
+function balusterCalc(runFt,balW,maxGap){
+  var pitch=balW+maxGap;
+  var count=Math.ceil(runFt*12/pitch-1e-9);
+  var actualGap=count>0?runFt*12/count-balW:0;
+  return {pitch:pitch,count:count,actualGap:actualGap};
+}
+/*PURE-END*/
+/*P3SIG*/
+function sigSlotBody(){var s=document.querySelector('[data-nn-signature]');return s?s.querySelector('.nn-sig-body'):null;}
+function sigSet(title,html){var b=sigSlotBody();if(!b)return;b.innerHTML=(title?'<p class="sig-title">'+title+'</p>':'')+html;}
+function sigMoney(v){return (v<0?'-$':'$')+Math.abs(Math.round(v)).toLocaleString('en-US');}
+var fmt0=(typeof fmt0==='function')?fmt0:function(n){return n.toLocaleString('en-US',{maximumFractionDigits:0});};
+var fmt1=(typeof fmt1==='function')?fmt1:function(n){return n.toLocaleString('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});};
+var money=(typeof money==='function')?money:function(n){return '$'+Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});};
+var money0=(typeof money0==='function')?money0:function(n){return '$'+Math.round(n).toLocaleString('en-US');};
+
+function sigLadderHTML(steps,note){var h='<div class="sig-ladder">';for(var i=0;i<steps.length;i++){var s=steps[i];h+='<div class="sig-lstep"><span class="sig-lstep-main"><span class="sig-dot s-'+(i%4===0?'a':i%4===1?'b':i%4===2?'c':'d')+'"></span>'+s[0]+'</span><strong>'+s[1]+'</strong></div>';if(s[2]){h+='<div class="sig-lstep-sub">'+s[2]+'</div>';}}h+='</div>';if(note){h+='<p class="sig-note">'+note+'</p>';}return h;}
+
+function sigRectSVG(l,w,lLab,wLab,cap){var W=300,H=170,sx=54,sy=26,iw=W-2*sx,ih=H-2*sy;var sc=Math.min(iw/Math.max(l,0.01),ih/Math.max(w,0.01));var rw=Math.max(10,l*sc),rh=Math.max(10,w*sc),x=(W-rw)/2,y=(H-rh)/2;var h='<svg class="sig-diagram" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Dimension diagram"><rect x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+rw.toFixed(1)+'" height="'+rh.toFixed(1)+'" rx="3"/><text class="sig-dim" x="'+(W/2)+'" y="'+(y-8)+'" text-anchor="middle">'+lLab+'</text><text class="sig-dim" x="'+(x+rw+8)+'" y="'+(H/2)+'" text-anchor="middle" transform="rotate(90 '+(x+rw+8)+' '+(H/2)+')">'+wLab+'</text>';if(cap){h+='<text class="sig-dimcap" x="'+(W/2)+'" y="'+(H/2+4)+'" text-anchor="middle">'+cap+'</text>';}return h+'</svg>';}
+function sigWallSVG(l,ht,lLab,hLab,cap){return sigRectSVG(l,ht,lLab,hLab,cap);}
+function sigLineSVG(lab){var h='<svg class="sig-diagram sig-line-diagram" viewBox="0 0 300 54" role="img" aria-label="Run diagram"><line x1="24" y1="30" x2="276" y2="30"/><line x1="24" y1="20" x2="24" y2="40"/><line x1="276" y1="20" x2="276" y2="40"/><text class="sig-dim" x="150" y="16" text-anchor="middle">'+lab+'</text></svg>';return h;}
+function sigGridSVG(cols,rows,cap){cols=Math.max(1,Math.min(24,Math.round(cols)));rows=Math.max(1,Math.min(24,Math.round(rows)));var W=300,H=170,sx=30,sy=16,iw=W-2*sx,ih=H-2*sy,cw=iw/cols,ch=ih/rows;var h='<svg class="sig-diagram" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Layout grid"><rect x="'+sx+'" y="'+sy+'" width="'+iw+'" height="'+ih+'"/>';for(var i=1;i<cols;i++){h+='<line x1="'+(sx+i*cw).toFixed(1)+'" y1="'+sy+'" x2="'+(sx+i*cw).toFixed(1)+'" y2="'+(sy+ih)+'"/>';}for(var j=1;j<rows;j++){h+='<line x1="'+sx+'" y1="'+(sy+j*ch).toFixed(1)+'" x2="'+(sx+iw)+'" y2="'+(sy+j*ch).toFixed(1)+'"/>';}if(cap){h+='<text class="sig-dimcap" x="'+(W/2)+'" y="'+(H-3)+'" text-anchor="middle">'+cap+'</text>';}return h+'</svg>';}
+function sigTriSVG(run,rise,hypLab,riseLab,runLab){var W=300,H=170,sx=46,sy=24,iw=W-2*sx,ih=H-2*sy;var sc=Math.min(iw/Math.max(run,0.01),ih/Math.max(rise,0.01));var rw=run*sc,rh=rise*sc,x=sx,y=H-sy;var h='<svg class="sig-diagram" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Slope triangle diagram"><polygon points="'+x+','+y+' '+(x+rw).toFixed(1)+','+y+' '+(x+rw).toFixed(1)+','+(y-rh).toFixed(1)+'"/><text class="sig-dim" x="'+(x+rw/2)+'" y="'+(y+16)+'" text-anchor="middle">'+runLab+'</text><text class="sig-dim" x="'+(x+rw+8)+'" y="'+(y-rh/2)+'" text-anchor="middle" transform="rotate(90 '+(x+rw+8)+' '+(y-rh/2)+')">'+riseLab+'</text><text class="sig-dim" x="'+(x+rw/2-14)+'" y="'+(y-rh/2-8)+'" text-anchor="middle" transform="rotate('+(-Math.atan2(rh,rw)*180/Math.PI).toFixed(1)+' '+(x+rw/2-14)+' '+(y-rh/2-8)+')">'+hypLab+'</text></svg>';return h;}
+function sigStepsSVG(risers,treadIn,totalRiseIn){var n=Math.max(1,Math.min(20,Math.round(risers)));var W=300,H=170,sx=30,sy=20,iw=W-2*sx,ih=H-2*sy;var sw=iw/n,sh=ih/n;var d='M '+sx+' '+(H-sy);for(var i=0;i<n;i++){d+=' L '+(sx+(i+1)*sw).toFixed(1)+' '+(H-sy-i*sh).toFixed(1)+' L '+(sx+(i+1)*sw).toFixed(1)+' '+(H-sy-(i+1)*sh).toFixed(1);}d+=' L '+sx+' '+(H-sy);var h='<svg class="sig-diagram" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Stair profile diagram"><path d="'+d+' Z"/><text class="sig-dimcap" x="'+(W/2)+'" y="'+(H-4)+'" text-anchor="middle">'+n+' risers · total rise '+totalRiseIn+' in</text></svg>';return h;}
+
+function calc(){
+  var r=balusterCalc(Math.max(0,v('run')),Math.max(0,v('balw')),Math.max(0,v('gap')));
+  var res=document.getElementById('results');
+  if(!(r.count>0)){document.getElementById('rMain').textContent='—';document.getElementById('verdict').textContent='Enter a railing length to count balusters.';document.getElementById('rows').innerHTML='';res.classList.add('show');return;}
+  document.getElementById('rMain').textContent=fmt0(r.count)+' balusters';
+  document.getElementById('verdict').textContent='At a '+fmt1(r.pitch)+'-in pitch you need '+fmt0(r.count)+' balusters — laid out evenly the real gap is '+fmt(r.actualGap)+' in, safely inside the limit.';
+  document.getElementById('rows').innerHTML=row('Repeating pitch',fmt(r.pitch)+' in')+row('Balusters to buy',fmt0(r.count))
+    +row('Actual gap (even layout)',fmt(r.actualGap)+' in')+row('Spacer block size',fmt(r.actualGap)+' in');
+/*P3HOOK*/
+  sigSet('Your baluster list', sigLineSVG('rail run '+fmt1(v('run'))+' ft') + sigLadderHTML([['Balusters to buy',fmt0(r.count),'Spaced on a '+fmt(r.pitch)+' in pitch'],['Actual gap',fmt(r.actualGap)+' in','The clear space the layout really leaves between balusters']],'The count is solved backwards from the gap — that is why the pitch lands on a fraction instead of a round number.'));
+  /*P3HOOK-END*/
+    res.classList.add('show');
+}
+
+function live(){document.querySelectorAll('input,select,textarea').forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});}
+
+live(); calc();
+
+</script>
+
+<script src="../assets/ads.js"></script>
+<script src="../assets/track.js"></script>
+<script src="../assets/nn-tools.js"></script>
+</body>
+</html>

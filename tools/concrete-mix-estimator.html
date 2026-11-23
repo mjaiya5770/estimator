@@ -97,6 +97,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8058544460943611" crossorigin="anonymous"></script>
 
 <!-- NN-EMBED --><script>if(/[?&]embed=1(&|$)/.test(window.location.search))document.documentElement.classList.add("nn-embed");</script>
+<script>if(/[?&]embed=1(&|$)/.test(window.location.search))window.location.replace("../widgets/concrete-mix-estimator.html?embed=1");</script>
 </head>
 <body>
 <header class="site-header">
@@ -110,32 +111,15 @@
   <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../calculators.html#cat-home-diy-tools">Home & DIY tools</a> › Concrete Mix Estimator</div>
 <div class="nn-ad nn-ad-top" data-k728="21567fdb3b657a147120000a47c222d8" data-k320="276d5857ab424fb5b4d04320a8aa16fd"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Estimator — every project number, free</strong><span>Materials, quantities &amp; costs for home, garden &amp; builds. No signup, ever →</span></a></div>
   <h1 class="tool-title">Concrete Mix Estimator</h1>
+   <div class="card nn-use-cta">
+     <h2>Use the Concrete Mix Estimator</h2>
+     <p>The calculator itself lives on the landing page — open it there and it is ready in the module, sized to fit your screen with no scrolling through a long page to find the form.</p>
+     <p><a class="btn" href="../index.html?use=tools/concrete-mix-estimator.html">Open the Concrete Mix Estimator &rarr;</a></p>
+   </div>
+   
   <p class="lede">Bagged mix hides the recipe; site mixing shows it. Enter the volume and the ratio your job specs — 1:2:4 for most slabs, 1:1.5:3 for structural work — and get cement bags, sand, aggregate and water as a real shopping list.</p>
 
-  <div class="card nn-calc-card">
-
-    <div class="row">
-      <div class="field"><label for="yd">Concrete volume (cu yd)</label><input id="yd" type="number" value="2" min="0" step="any"></div>
-      <div class="field"><label for="mix">Mix ratio (cement : sand : aggregate)</label><select id="mix"><option value="1:1.5:3">1 : 1.5 : 3 — structural / high strength</option><option value="1:2:4" selected>1 : 2 : 4 — slabs, footings, general</option><option value="1:2:3">1 : 2 : 3 — posts, small structural</option><option value="1:3:6">1 : 3 : 6 — blinding, mass fill, paths</option></select></div>
-    </div>
-    <p style="color:var(--muted);font-size:.92rem;margin:4px 0 0">Volume is finished, in-place concrete. Don't know it yet? The Concrete Calculator turns slab, footing, tube, step and curb dimensions into cubic yards — bring that number here.</p>
-
-    <button class="btn" onclick="calc()">Estimate the mix</button>
-    <div class="nn-actions no-print" data-nn-actions>
-  <button type="button" class="nn-btn" data-nn="share">🔗 Copy link to this result</button>
-  <button type="button" class="nn-btn" data-nn="copy">📋 Copy result</button>
-  <button type="button" class="nn-btn" data-nn="save">💾 Save this calculation</button>
-  <button type="button" class="nn-btn" data-nn="print">🖨️ Print / Save PDF</button>
-</div>
-<div class="nn-saves no-print" id="nnSavesPanel" hidden></div>
-<p class="nn-embed-link no-print"><a href="../embed.html#concrete-mix-estimator">Embed this calculator on your site — free</a></p>
-<div class="results" id="results">
-      <div style="color:var(--muted);font-size:.9rem">Cement bags to buy</div>
-      <div id="verdict" style="font-weight:700;font-size:1.02rem;margin:2px 0 6px"></div>
-      <div class="big" id="rMain">—</div>
-      <table><tbody id="rows"></tbody></table>
-    <div class="nn-signature" data-nn-signature><p class="nn-sig-title">Signature view</p><div class="nn-sig-body"></div></div></div>
-  </div>
+  
 <div class="nn-ad" data-key="a3b1d00ad85cd3b93fc5c514e9b784ca" data-w="300" data-h="250"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Estimator — every project number, free</strong><span>Materials, quantities &amp; costs for home, garden &amp; builds. No signup, ever →</span></a></div>
 
   <div class="card">
@@ -195,7 +179,12 @@
 </main>
 
 <div class="nn-ad nn-ad-bottom" data-key="a3b1d00ad85cd3b93fc5c514e9b784ca" data-w="300" data-h="250"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Estimator — every project number, free</strong><span>Materials, quantities &amp; costs for home, garden &amp; builds. No signup, ever →</span></a></div>
-<section class="related-tools">
+<div class="card nn-use-cta">
+     <h2>Ready to run your numbers?</h2>
+     <p>The calculator itself lives on the landing page — open it there and it is ready in the module, sized to fit your screen with no scrolling through a long page to find the form.</p>
+     <p><a class="btn" href="../index.html?use=tools/concrete-mix-estimator.html">Open the Concrete Mix Estimator &rarr;</a></p>
+   </div>
+   <section class="related-tools">
   <h2>Related tools</h2>
   <ul>
     <li><a href="concrete-calculator.html">Concrete Calculator</a></li>
@@ -206,57 +195,7 @@
   </ul>
 </section>
 <footer class="site-footer"><div class="wrap"><div>© 2026 Estimator</div><div><a href="../terms.html">Terms</a> · <a href="../privacy.html">Privacy</a> · <a href="../index.html">All tools</a> · <a href="../calculators.html">Calculators</a> · <a href="../embed.html">Embed</a> · <a href="../partnerships.html">Partnerships</a> · <a href="../creator-roi-calculators.html">Creator ROI</a></div></div></footer>
-<script>
 
-function v(id){return +document.getElementById(id).value||0;}
-function sv(id){return document.getElementById(id).value;}
-function fmt(n){return n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
-function fmt0(n){return n.toLocaleString('en-US',{maximumFractionDigits:0});}
-function fmt1(n){return n.toLocaleString('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});}
-function row(l,val){return '<tr><td>'+l+'</td><td>'+val+'</td></tr>';}
-function money(n){return '$'+fmt(n);}
-function money0(n){return '$'+fmt0(Math.round(n));}
-function ceilg(x){return Math.ceil(x-1e-9);}
-
-/*PURE-BEGIN*/
-var MIXES={'1:1.5:3':[1,1.5,3],'1:2:4':[1,2,4],'1:3:6':[1,3,6],'1:2:3':[1,2,3]};
-function mixCalc(yd,mix){
-  var m=MIXES[mix],parts=m[0]+m[1]+m[2],dryFt3=yd*27*1.54;
-  var cemFt3=dryFt3*m[0]/parts, sandFt3=dryFt3*m[1]/parts, aggFt3=dryFt3*m[2]/parts;
-  var bags=Math.ceil(cemFt3/1.0-1e-9);
-  return {dryFt3:dryFt3,bags:bags,sandYd:sandFt3/27,aggYd:aggFt3/27,sandTons:sandFt3/27*1.4,aggTons:aggFt3/27*1.5,waterGal:bags*5.5};
-}
-/*PURE-END*/
-/*P3SIG*/
-function sigSlotBody(){var s=document.querySelector('[data-nn-signature]');return s?s.querySelector('.nn-sig-body'):null;}
-function sigSet(title,html){var b=sigSlotBody();if(!b)return;b.innerHTML=(title?'<p class="sig-title">'+title+'</p>':'')+html;}
-function sigMoney(v){return (v<0?'-$':'$')+Math.abs(Math.round(v)).toLocaleString('en-US');}
-var fmt0=(typeof fmt0==='function')?fmt0:function(n){return n.toLocaleString('en-US',{maximumFractionDigits:0});};
-var fmt1=(typeof fmt1==='function')?fmt1:function(n){return n.toLocaleString('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});};
-var money=(typeof money==='function')?money:function(n){return '$'+Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});};
-var money0=(typeof money0==='function')?money0:function(n){return '$'+Math.round(n).toLocaleString('en-US');};
-
-function sigLadderHTML(steps,note){var h='<div class="sig-ladder">';for(var i=0;i<steps.length;i++){var s=steps[i];h+='<div class="sig-lstep"><span class="sig-lstep-main"><span class="sig-dot s-'+(i%4===0?'a':i%4===1?'b':i%4===2?'c':'d')+'"></span>'+s[0]+'</span><strong>'+s[1]+'</strong></div>';if(s[2]){h+='<div class="sig-lstep-sub">'+s[2]+'</div>';}}h+='</div>';if(note){h+='<p class="sig-note">'+note+'</p>';}return h;}
-
-function calc(){
-  var r=mixCalc(Math.max(0,v('yd')),sv('mix'));
-  var res=document.getElementById('results');
-  if(!(r.dryFt3>0)){document.getElementById('rMain').textContent='—';document.getElementById('verdict').textContent='Enter a volume to build the shopping list.';document.getElementById('rows').innerHTML='';res.classList.add('show');return;}
-  document.getElementById('rMain').textContent=fmt0(r.bags)+' cement bags';
-  document.getElementById('verdict').textContent='For '+fmt(v('yd'))+' cu yd at '+sv('mix')+': '+fmt0(r.bags)+' bags of cement, '+fmt(r.sandYd)+' yd of sand, '+fmt(r.aggYd)+' yd of aggregate and about '+fmt0(r.waterGal)+' gallons of water.';
-  document.getElementById('rows').innerHTML=row('Dry material volume',fmt(r.dryFt3)+' cu ft (×1.54)')+row('Cement (94-lb bags)',fmt0(r.bags))
-    +row('Sand',fmt(r.sandYd)+' cu yd ('+fmt(r.sandTons)+' tons)')+row('Aggregate',fmt(r.aggYd)+' cu yd ('+fmt(r.aggTons)+' tons)')+row('Mixing water',fmt0(r.waterGal)+' gal');
-/*P3HOOK*/
-  sigSet('Your mix list', sigLadderHTML([['Cement (94-lb bags)',fmt0(r.bags),'The binder — one bag per batch is the usual rhythm'],['Sand',fmt(r.sandTons)+' tons',fmt(r.sandYd)+' yd³ loose'],['Gravel / coarse aggregate',fmt(r.aggTons)+' tons',fmt(r.aggYd)+' yd³ loose'],['Water',fmt0(r.waterGal)+' gal','Start low and add as you mix — soupy concrete is weak concrete']],'Order sand and gravel on the ton figures; the yard numbers are loose volumes, and the dry total runs larger than the wet yield because sand fills the voids in the gravel.'));
-  /*P3HOOK-END*/
-    res.classList.add('show');
-}
-
-function live(){document.querySelectorAll('input,select,textarea').forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});}
-
-live(); calc();
-
-</script>
 
 <script src="../assets/ads.js"></script>
 <script src="../assets/track.js"></script>

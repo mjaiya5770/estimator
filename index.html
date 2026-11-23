@@ -82,7 +82,16 @@
       <div><strong>$0</strong><span>no signup, no fees</span></div>
     </div>
     </div>
-    <div class="hero-calc" id="heroCalc">
+    
+  </div>
+
+  <svg class="nest-motif" viewBox="0 0 640 24" fill="none" aria-hidden="true"><path d="M8 18 H632 M28 18 V6 M88 18 V11 M148 18 V6 M208 18 V11 M268 18 V6 M328 18 V11 M388 18 V6 M448 18 V11 M508 18 V6 M568 18 V11" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/></svg>
+</section>
+<section class="nn-under-hero">
+  <div class="wrap">
+    <div class="nn-uh-grid">
+      <div class="nn-uh-calc card">
+<div class="hero-calc" id="heroCalc">
       <div class="hc-bar">
         <button type="button" class="hc-bar-btn" id="hcBack" hidden aria-label="Back to the basic calculator">&larr;</button>
         <span class="hc-title" id="hcTitle">Calculator</span>
@@ -118,7 +127,7 @@
       <p class="hc-note">Quick math, right here &mdash; or search and the calculator you pick opens in this module. The full shelf is just below &darr;</p>
       </div>
       <div class="hc-view" id="hcTool" hidden>
-        <iframe id="hcFrame" title="Calculator" loading="lazy" style="border:0;width:100%;height:640px;border-radius:12px;background:#fff"></iframe>
+        <iframe id="hcFrame" title="Calculator" loading="lazy" style="border:0;width:100%;border-radius:12px;background:#fff"></iframe>
         <p class="hc-tool-foot"><a id="hcOpenFull" href="calculators.html">Open the full calculator page &rarr;</a></p>
       </div>
       <div class="hc-view" id="hcHistory" hidden>
@@ -126,9 +135,12 @@
         <p class="hc-tool-foot"><button type="button" class="hc-bar-btn" id="hcClearHistory">Clear history</button></p>
       </div>
     </div>
+</div>
+      <div class="nn-uh-ad">
+        <div class="nn-ad nn-ad-top" data-k728="21567fdb3b657a147120000a47c222d8" data-k320="276d5857ab424fb5b4d04320a8aa16fd"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="calculators.html"><strong>Estimator — every project number, free</strong><span>Materials, quantities &amp; costs for home, garden &amp; builds. No signup, ever →</span></a></div>
+      </div>
+    </div>
   </div>
-
-  <svg class="nest-motif" viewBox="0 0 640 24" fill="none" aria-hidden="true"><path d="M8 18 H632 M28 18 V6 M88 18 V11 M148 18 V6 M208 18 V11 M268 18 V6 M328 18 V11 M388 18 V6 M448 18 V11 M508 18 V6 M568 18 V11" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/></svg>
 </section>
 <nav class="lib-subnav" aria-label="Calculator categories">
   <div class="wrap">
@@ -504,11 +516,14 @@
     });
   }
   /* ---------- loading a calculator into the module ---------- */
+  var NN_WIDGETS={'asphalt-estimator':1,'baluster-estimator':1,'bathroom-remodel-estimator':1,'board-foot-estimator':1,'brick-estimator':1,'btu-estimator':1,'cabinet-door-calculator':1,'carpet-estimator':1,'catering-estimator':1,'concrete-block-estimator':1,'concrete-block-fill-estimator':1,'concrete-calculator':1,'concrete-mix-estimator':1,'countertop-estimator':1,'deck-cost-estimator':1,'deck-material-estimator':1,'deck-stain-estimator':1,'driveway-cost-estimator':1,'drywall-calculator':1,'drywall-cost-estimator':1,'epoxy-estimator':1,'ev-charging-cost-estimator':1,'fence-cost-estimator':1,'fence-estimator':1,'flooring-calculator':1,'framing-estimator':1,'french-drain-estimator':1,'grass-seed-estimator':1,'gravel-calculator':1,'gutter-cost-estimator':1,'home-addition-cost-estimator':1,'home-renovation-estimator':1,'house-building-cost-estimator':1,'house-cleaning-cost-estimator':1,'hvac-cost-estimator':1,'insulation-estimator':1,'kitchen-remodel-estimator':1,'lawn-care-cost-estimator':1,'material-weight-calculator':1,'metal-roofing-estimator':1,'moving-cost-estimator':1,'mulch-calculator':1,'paint-coverage-calculator':1,'painting-cost-estimator':1,'paver-estimator':1,'pet-cost-estimator':1,'plant-spacing-estimator':1,'plywood-estimator':1,'pool-volume-estimator':1,'rafter-length-calculator':1,'rebar-estimator':1,'retaining-wall-estimator':1,'roof-pitch-calculator':1,'roof-replacement-cost-estimator':1,'roofing-estimator':1,'sand-estimator':1,'shed-cost-estimator':1,'siding-cost-estimator':1,'siding-estimator':1,'sod-estimator':1,'solar-cost-estimator':1,'square-footage-calculator':1,'stair-estimator':1,'stone-estimator':1,'tank-volume-estimator':1,'tile-calculator':1,'topsoil-estimator':1,'tree-removal-cost-estimator':1,'trim-molding-estimator':1,'trip-cost-estimator':1,'wainscoting-calculator':1,'wallpaper-estimator':1,'water-bill-estimator':1,'water-heater-cost-estimator':1,'wedding-cost-estimator':1,'window-replacement-cost-estimator':1};
   function loadTool(href, name){
     if(!href || href.indexOf('tools/')!==0) return false;
+    if(!name||name==='Calculator'){var ca=document.querySelector('a[href="'+href+'"]'); if(ca) name=ca.textContent.trim();}
     currentTool={href:href, name:name||'Calculator'};
     titleEl.textContent=currentTool.name;
-    frame.src=href+(href.indexOf('?')>-1?'&':'?')+'embed=1';
+    var slug=href.replace('tools/','').replace('.html','');
+    frame.src=(NN_WIDGETS[slug]?'widgets/'+slug+'.html':href)+'?embed=1';
     openFull.href=href;
     showView('tool');
     pushHistory({t:'tool', text:currentTool.name, href:href});
@@ -516,6 +531,19 @@
     return true;
   }
   window.nnHeroLoadTool=loadTool;
+  /* Deep link from guide pages: ?use=tools/<slug>.html opens that calculator here */
+  (function(){ var m=/[?&]use=(tools\/[a-z0-9\-]+\.html)/.exec(window.location.search); if(!m) return; var a=document.querySelector('a[href="'+m[1]+'"]'); loadTool(m[1], a?a.textContent.trim():undefined); })();
+  /* Niche default: preload the flagship calculator in the hero */
+  (function(){ if(/[?&]use=/.test(window.location.search)) return; var href='tools/concrete-calculator.html'; var a=document.querySelector('a[href="'+href+'"]'); if(a) loadTool(href, a.textContent.trim()); })();
+  window.addEventListener('message', function(e){
+    if (e.origin !== window.location.origin) return;
+    var h = e.data && e.data.nnEmbedHeight;
+    if (!h) return;
+    var target = null;
+    if (e.source === frame.contentWindow) { if (view !== 'tool') return; target = frame; }
+    else { var uh = document.getElementById('uhFrame'); if (uh && e.source === uh.contentWindow) target = uh; }
+    if (target) target.style.height = Math.max(300, Math.min(Math.ceil(h) + 10, 4000)) + 'px';
+  });
   document.addEventListener('click',function(e){
     if(e.ctrlKey||e.metaKey||e.shiftKey||e.button!==0) return;
     var t=e.target; if(!t||!t.closest) return;
