@@ -82,7 +82,16 @@
       <div><strong>$0</strong><span>no signup, no fees</span></div>
     </div>
     </div>
-    <div class="hero-calc" id="heroCalc">
+    
+  </div>
+
+  <svg class="nest-motif" viewBox="0 0 640 24" fill="none" aria-hidden="true"><path d="M8 18 H632 M28 18 V6 M88 18 V11 M148 18 V6 M208 18 V11 M268 18 V6 M328 18 V11 M388 18 V6 M448 18 V11 M508 18 V6 M568 18 V11" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/></svg>
+</section>
+<section class="nn-under-hero">
+  <div class="wrap">
+    <div class="nn-uh-grid">
+      <div class="nn-uh-calc card">
+<div class="hero-calc" id="heroCalc">
       <div class="hc-bar">
         <button type="button" class="hc-bar-btn" id="hcBack" hidden aria-label="Back to the basic calculator">&larr;</button>
         <span class="hc-title" id="hcTitle">Calculator</span>
@@ -126,19 +135,7 @@
         <p class="hc-tool-foot"><button type="button" class="hc-bar-btn" id="hcClearHistory">Clear history</button></p>
       </div>
     </div>
-  </div>
-
-  <svg class="nest-motif" viewBox="0 0 640 24" fill="none" aria-hidden="true"><path d="M8 18 H632 M28 18 V6 M88 18 V11 M148 18 V6 M208 18 V11 M268 18 V6 M328 18 V11 M388 18 V6 M448 18 V11 M508 18 V6 M568 18 V11" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/></svg>
-</section>
-<section class="nn-under-hero">
-  <div class="wrap">
-    <div class="nn-uh-grid">
-      <div class="nn-uh-calc card">
-        <h2>Featured calculator: Concrete</h2>
-        <p class="nn-uh-sub">The full Concrete calculator, working right here — the frame sizes itself, so nothing hides behind a scrollbar.</p>
-        <iframe id="uhFrame" title="Concrete Calculator" loading="lazy" src="widgets/concrete-calculator.html?embed=1" style="border:0;width:100%;border-radius:12px;background:#fff"></iframe>
-        <p class="nn-uh-foot"><a href="tools/concrete-calculator.html">Read the Concrete guide &rarr;</a></p>
-      </div>
+</div>
       <div class="nn-uh-ad">
         <div class="nn-ad nn-ad-top" data-k728="21567fdb3b657a147120000a47c222d8" data-k320="276d5857ab424fb5b4d04320a8aa16fd"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="calculators.html"><strong>Estimator — every project number, free</strong><span>Materials, quantities &amp; costs for home, garden &amp; builds. No signup, ever →</span></a></div>
       </div>
@@ -486,7 +483,7 @@
   }
   function scrollToModule(){
     var r=card.getBoundingClientRect();
-    if(r.top<76||r.bottom>window.innerHeight){ card.scrollIntoView({behavior:reduced?'auto':'smooth', block:'center'}); }
+    if(r.top<76||r.bottom>window.innerHeight){ card.scrollIntoView({behavior:reduced?'auto':'smooth', block:'start'}); }
   }
   /* ---------- universal history (localStorage, one history for everything) ---------- */
   var HKEY='nnHeroHistory', history=[];
@@ -537,7 +534,7 @@
   /* Deep link from guide pages: ?use=tools/<slug>.html opens that calculator here */
   (function(){ var m=/[?&]use=(tools\/[a-z0-9\-]+\.html)/.exec(window.location.search); if(!m) return; var a=document.querySelector('a[href="'+m[1]+'"]'); loadTool(m[1], a?a.textContent.trim():undefined); })();
   /* Niche default: preload the flagship calculator in the hero */
-  (function(){ if(/[?&]use=/.test(window.location.search)) return; var href='tools/concrete-calculator.html'; var a=document.querySelector('a[href="'+href+'"]'); if(a) loadTool(href, a.textContent.trim()); })();
+  (function(){ if(/[?&]use=/.test(window.location.search)) return; var href='tools/concrete-calculator.html'; var a=document.querySelector('a[href="'+href+'"]'); if(a){ var _siv=Element.prototype.scrollIntoView; Element.prototype.scrollIntoView=function(){}; loadTool(href, a.textContent.trim()); setTimeout(function(){Element.prototype.scrollIntoView=_siv;},1500); } })();
   window.addEventListener('message', function(e){
     if (e.origin !== window.location.origin) return;
     var h = e.data && e.data.nnEmbedHeight;
