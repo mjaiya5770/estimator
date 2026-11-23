@@ -481,7 +481,7 @@
     backBtn.hidden = v!=='tool';
     if(v==='default') titleEl.textContent='Calculator';
   }
-  function scrollToModule(){
+  function scrollToModule(){ if(window.__nnPreloadAt && Date.now()-window.__nnPreloadAt<2500) return;
     var r=card.getBoundingClientRect();
     if(r.top<76||r.bottom>window.innerHeight){ card.scrollIntoView({behavior:reduced?'auto':'smooth', block:'start'}); }
   }
