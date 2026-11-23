@@ -518,7 +518,7 @@
   /* ---------- loading a calculator into the module ---------- */
   var NN_WIDGETS={'asphalt-estimator':1,'baluster-estimator':1,'bathroom-remodel-estimator':1,'board-foot-estimator':1,'brick-estimator':1,'btu-estimator':1,'cabinet-door-calculator':1,'carpet-estimator':1,'catering-estimator':1,'concrete-block-estimator':1,'concrete-block-fill-estimator':1,'concrete-calculator':1,'concrete-mix-estimator':1,'countertop-estimator':1,'deck-cost-estimator':1,'deck-material-estimator':1,'deck-stain-estimator':1,'driveway-cost-estimator':1,'drywall-calculator':1,'drywall-cost-estimator':1,'epoxy-estimator':1,'ev-charging-cost-estimator':1,'fence-cost-estimator':1,'fence-estimator':1,'flooring-calculator':1,'framing-estimator':1,'french-drain-estimator':1,'grass-seed-estimator':1,'gravel-calculator':1,'gutter-cost-estimator':1,'home-addition-cost-estimator':1,'home-renovation-estimator':1,'house-building-cost-estimator':1,'house-cleaning-cost-estimator':1,'hvac-cost-estimator':1,'insulation-estimator':1,'kitchen-remodel-estimator':1,'lawn-care-cost-estimator':1,'material-weight-calculator':1,'metal-roofing-estimator':1,'moving-cost-estimator':1,'mulch-calculator':1,'paint-coverage-calculator':1,'painting-cost-estimator':1,'paver-estimator':1,'pet-cost-estimator':1,'plant-spacing-estimator':1,'plywood-estimator':1,'pool-volume-estimator':1,'rafter-length-calculator':1,'rebar-estimator':1,'retaining-wall-estimator':1,'roof-pitch-calculator':1,'roof-replacement-cost-estimator':1,'roofing-estimator':1,'sand-estimator':1,'shed-cost-estimator':1,'siding-cost-estimator':1,'siding-estimator':1,'sod-estimator':1,'solar-cost-estimator':1,'square-footage-calculator':1,'stair-estimator':1,'stone-estimator':1,'tank-volume-estimator':1,'tile-calculator':1,'topsoil-estimator':1,'tree-removal-cost-estimator':1,'trim-molding-estimator':1,'trip-cost-estimator':1,'wainscoting-calculator':1,'wallpaper-estimator':1,'water-bill-estimator':1,'water-heater-cost-estimator':1,'wedding-cost-estimator':1,'window-replacement-cost-estimator':1};
   function loadTool(href, name){
-    if(!href || href.indexOf('tools/')!==0) return false;
+    if(!href || href.indexOf('tools/')!==0) return false; window.__nnAlign=1;
     if(!name||name==='Calculator'){var ca=document.querySelector('a[href="'+href+'"]'); if(ca) name=ca.textContent.trim();}
     currentTool={href:href, name:name||'Calculator'};
     titleEl.textContent=currentTool.name;
@@ -534,7 +534,7 @@
   /* Deep link from guide pages: ?use=tools/<slug>.html opens that calculator here */
   (function(){ var m=/[?&]use=(tools\/[a-z0-9\-]+\.html)/.exec(window.location.search); if(!m) return; var a=document.querySelector('a[href="'+m[1]+'"]'); loadTool(m[1], a?a.textContent.trim():undefined); })();
   /* Niche default: preload the flagship calculator in the hero */
-  (function(){ if(/[?&]use=/.test(window.location.search)) return; var href='tools/concrete-calculator.html'; var a=document.querySelector('a[href="'+href+'"]'); if(a){ var _siv=Element.prototype.scrollIntoView; Element.prototype.scrollIntoView=function(){}; loadTool(href, a.textContent.trim()); setTimeout(function(){Element.prototype.scrollIntoView=_siv;},1500); } })();
+  (function(){ if(/[?&]use=/.test(window.location.search)) return; var href='tools/concrete-calculator.html'; var a=document.querySelector('a[href="'+href+'"]'); if(a){ window.__nnPreloadAt=Date.now(); loadTool(href, a.textContent.trim()); } })();
   window.addEventListener('message', function(e){
     if (e.origin !== window.location.origin) return;
     var h = e.data && e.data.nnEmbedHeight;
@@ -542,7 +542,7 @@
     var target = null;
     if (e.source === frame.contentWindow) { if (view !== 'tool') return; target = frame; }
     else { var uh = document.getElementById('uhFrame'); if (uh && e.source === uh.contentWindow) target = uh; }
-    if (target) target.style.height = Math.max(300, Math.min(Math.ceil(h) + 10, 4000)) + 'px';
+    if (target) { target.style.height = Math.max(300, Math.min(Math.ceil(h) + 10, 4000)) + 'px'; if (target === frame && window.__nnAlign) { window.__nnAlign = 0; if (!(window.__nnPreloadAt && Date.now() - window.__nnPreloadAt < 2500)) { var c = document.getElementById('heroCalc'); if (c) setTimeout(function(){ c.scrollIntoView({behavior:'smooth', block:'start'}); }, 60); } } }
   });
   document.addEventListener('click',function(e){
     if(e.ctrlKey||e.metaKey||e.shiftKey||e.button!==0) return;
