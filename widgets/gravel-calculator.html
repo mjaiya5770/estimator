@@ -250,7 +250,7 @@ function calc(){
   document.getElementById('rows').innerHTML=row('Volume',fmt(cuFt)+' cu ft')+row('Cubic yards',fmt(yd))+row('Weight',fmt(tons)+' tons')+row('Bags (0.5 cu ft)',fmt(bags))
     +row('Bulk cost estimate','$'+fmt(yd*v('bulkCost')))+row('Bagged cost estimate','$'+fmt(bags*v('bagCost')));
 /*P3HOOK*/
-  sigSet('Your gravel list', sigRectSVG(dv('gl'),dv('gw'),fmt1(dv('gl'))+' ft',fmt1(dv('gw'))+' ft','at '+v('gd')+' in deep') + sigLadderHTML([['Volume',fmt(yd)+' yd³',fmt(cuFt)+' ft³'+(v('extra')>0?' · includes '+v('extra')+'% extra for settling':' · no settling extra added')],['Weight',fmt(tons)+' tons','At '+v('density')+' lb/ft³ — the density printed with the result'],['Bags (0.5 ft³)',fmt0(bags),'The patch-and-top-up route']].concat(v('bulkCost')>0?[['Bulk cost estimate','$'+fmt(yd*v('bulkCost')),'Bagged would run $'+fmt(bags*v('bagCost'))]]:[]),'Gravel settles and compacts 10–15% in the first season — the extra allowance under More options exists for exactly that.'));
+  sigSet('Your gravel list', sigRectSVG(dv('gl'),dv('gw'),fmt1(dv('gl'))+' ft',fmt1(dv('gw'))+' ft','at '+v('gd')+' in deep') + sigLadderHTML([['Volume',fmt(yd)+' yd³',fmt(cuFt)+' ft³'+(v('extra')>0?' · includes '+v('extra')+'% extra for settling':' · no settling extra added')],['Weight',fmt(tons)+' tons','At '+v('density')+' tons/yd³ — the density printed with the result'],['Bags (0.5 ft³)',fmt0(bags),'The patch-and-top-up route']].concat(v('bulkCost')>0?[['Bulk cost estimate','$'+fmt(yd*v('bulkCost')),'Bagged would run $'+fmt(bags*v('bagCost'))]]:[]),'Gravel settles and compacts 10–15% in the first season — the extra allowance under More options exists for exactly that.'));
   /*P3HOOK-END*/
     document.getElementById('results').classList.add('show');
 }

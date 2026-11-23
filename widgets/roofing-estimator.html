@@ -269,7 +269,7 @@ function calc(){
     +row('Shingle bundles (3 per square)',fmt0(r.bundles))+row('Underlayment rolls (400 sq ft each)',fmt0(r.rolls))
     +row('Ridge cap bundles (35 ft each)',fmt0(r.ridgeBundles))+row('Roofing nails (≈320 per square)',fmt0(r.nails));
 /*P3HOOK*/
-  sigSet('Your roofing list', sigTriSVG(Math.max(1,v('len')/2),Math.max(1,v('len')/2*(+sv('pitch'))/12),fmt(r.factor)+' × area factor',sv('pitch')+'/12 pitch','half-span') + sigLadderHTML([['Shingle bundles',fmt0(r.bundles),fmt(r.squares)+' squares at 3 bundles per square'],['Roof area',fmt0(r.roofArea)+' sq ft','Footprint '+fmt0(r.footprint)+' sq ft × pitch factor '+fmt(r.factor)],['Underlayment rolls',fmt0(r.rolls),'Standard 400 sq ft rolls'],['Ridge bundles',fmt0(r.ridgeBundles),'For '+fmt0(v('ridge'))+' ft of ridge'],['Nails',fmt(r.nails)+' lb','Coil or hand nails at standard patterns']],'One square is 100 sq ft of finished roof — every roofing supplier quotes in squares, so it is the number to shop with.'));
+  sigSet('Your roofing list', sigTriSVG(Math.max(1,v('len')/2),Math.max(1,v('len')/2*(+sv('pitch'))/12),fmt(r.factor)+' × area factor',sv('pitch')+'/12 pitch','half-span') + sigLadderHTML([['Shingle bundles',fmt0(r.bundles),fmt(r.squares)+' squares at 3 bundles per square'],['Roof area',fmt0(r.roofArea)+' sq ft','Footprint '+fmt0(r.footprint)+' sq ft × pitch factor '+fmt(r.factor)],['Underlayment rolls',fmt0(r.rolls),'Standard 400 sq ft rolls'],['Ridge bundles',fmt0(r.ridgeBundles),'For '+fmt0(v('ridge'))+' ft of ridge'],['Nails',fmt(r.nails),'Coil or hand nails at standard patterns']],'One square is 100 sq ft of finished roof — every roofing supplier quotes in squares, so it is the number to shop with.'));
   /*P3HOOK-END*/
     res.classList.add('show');
 }
